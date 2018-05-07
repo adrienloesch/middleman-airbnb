@@ -1,0 +1,12 @@
+<div class="about-content">
+  <h1 class="text-center"> Best time!</h1>
+  <ul class="list-inline text-center">
+    <% data.users.each do |name| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{name.github_nickname}", class: "img-circle" %>
+        <h2><%= name.name.capitalize %></h2>
+        <a href="#"><%= name.github_nickname.capitalize %></a>
+      </li>
+    <% end %>
+  </ul>
+</div>
